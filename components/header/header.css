@@ -1,0 +1,75 @@
+header{
+    z-index: 1;
+      position: sticky;
+      top: 0;
+      opacity: 100%;
+      background-color: rgb(255, 255, 255);
+      
+    }
+  #title{
+        font-size: 35px;
+      }
+      
+ nav {
+          height: 10vh;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 5rem;
+          flex-wrap: nowrap;
+        }
+  nav>button{
+    height: 40%;
+    border-style: none;
+    background-color: white;
+  }
+  
+  .purplebtn{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  .purplebtn> img{
+    height: 40%;
+    padding-bottom: 10%;
+  }
+  p{
+    margin: 0;
+    padding: 0;
+  }
+ 
+  nav>button>img{
+    height: 100%;
+  }
+   #inputcontainer{
+          position: relative;
+          width: 700px; 
+      }
+  #inputcontainer>input {
+          width: 100%;
+          padding: 10px 15px 10px 10px; 
+          border-radius: 3px;
+          border-width: 1px;
+          background-color: rgb(255, 255, 255);
+      }
+      
+      
+   #inputcontainer >img {
+          position: absolute;
+          right: 10px; /* Espacio desde el borde derecho del contenedor */
+          top: 25%;
+          width: 20px; /* Ancho del icono */
+          height: 20px; /* Alto del icono */ 
+      }
+
+ 
+span{
+    color: #83178c;
+}

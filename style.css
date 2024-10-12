@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color: rgba(34, 32, 32, 0.87);
+  background-color: #ffffff;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ 
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+.splide__pagination {
+    counter-reset: pagination-num;
+  }
+  
+  .splide__pagination__page:before {
+    counter-increment: pagination-num;
+    content: counter( pagination-num );
+  }
+
+  .splide {
+    width: 93vw; 
+    height: 40vh;
+  }
+
+.splide__track {
+    width: 100%; 
+}
+
+.splide__list {
+    display: flex;
+    width: 101%; 
+}
+.splide__slide img {
+  width: 99%; 
+  height: 43vh;
+  border-radius: 12px; 
+  border-style: none;
+}
