@@ -1,0 +1,28 @@
+
+#general{
+    display: flex;
+    flex-direction: row;
+}
+#imagen{
+    height: 500px;
+    
+}
+#comprar{
+    background-color:  rgb(162, 0, 255);
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 8px;
+    border-style: none;
+}
+#añadir{
+    background-color: rgba(255, 149, 0, 0.928);
+    font-size: 16px;
+    padding: 2%;
+    border-radius: 8px;
+    border-style: none;
+}
+#caracteristicas>div{
+display: flex;
+flex-direction: row;
+gap: 3%;
+}

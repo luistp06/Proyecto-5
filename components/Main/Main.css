@@ -15,40 +15,71 @@ main{
 
 
 #categorias{
-  margin-top: 50px;
+  margin: 80px 0 60px 0;
   display: flex;
-  gap: 20px;
+  gap: 60px;
   justify-content: center;
 }
 
 .categoria {
+  min-width: 130px;
+  height: 60px;
+  color: #fff;
+  padding: 5px 80px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
   display: inline-block;
-  padding: 20px 40px;
-  background-color: #ff3ce8;
-  background-image: linear-gradient(225deg, #ff3ce8 0%, #784BA0 50%, #6b2bc5 100%);
-  color: white;
-  border-radius: 8px;
-  font-size: 16px;
-  border: none;
-  transition: transform 0.3s ease, background-color 0.3s ease; 
+  outline: none;
+  border-radius: 6px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid  rgba(72, 12, 128, 0.76);; 
+  color:  rgba(72, 12, 128, 0.76);; 
 }
+.categoria:hover {
+  color: #fff;
+}
+.categoria:hover:after {
+  width: 100%;
+}
+.categoria:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.5s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color:  rgba(72, 12, 128, 0.76);; 
+} 
+
 
 .categoria:hover {
   transform: scale(1.1); 
-  background-color: #6b2bc5; 
+  background-color:  rgba(72, 12, 128, 0.76);; 
 }
 
 .ofertas-container {
-  width: 100%;
+  width: 80%;
   height: fit-content;
   margin: 20px 40px;
-  display: flex;
-  grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+  
   gap: 60px;
-  justify-content: center; 
   
   
 }
 .oferta{
-  width: 15vw;
+  width: 17vw;
+}
+
+
+.cardBtn>p{
+  margin: 2% 10%;
 }

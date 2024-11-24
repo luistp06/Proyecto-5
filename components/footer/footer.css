@@ -1,79 +1,49 @@
 footer{
+  display: flex;
+  flex-direction: column;
+  width: 100%s;
     margin-top: 4rem;
     align-items: center;
     justify-content: center;
-    
-  padding-top: 1rem;
+  padding-top: 5vh;
+background-color: rgba(72, 12, 128, 0.76);
 }
-#links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-}
-#credits{
-    text-align: center;
-    font-size: 0.8rem;
-}
- button > h4{
-    font-size: 1.6rem;
-}
-.my-btn {
-    background: none;
-   border-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color:rgba(255, 255, 255, 0.87);
-    width: 15rem;
-    height: 4rem;
-    padding: 0 0.5rem;
-    gap: 0.8rem;
-    border-radius: 0.3rem;
-    transition: all 0.5s ease-in-out;
-    background-color: #242424;
-  }
-
-  .phone {
-    background: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:rgba(255, 255, 255, 0.87);
-    gap: 0.5rem;
-   
-  }  
-
-
-  .my-btn > img {
-    height: 30px;
-    width: 30px;
-    filter: invert(95%);
-  }
-
-  .phone > img {
-    height: 30px;
-    width: 30px;
-    filter: invert(95%);
+#mainfooter{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin-bottom:  5vh;
 }
 
-  .my-btn:hover {
-    background-color: rgba(0, 0, 0, 0.373);
-  }
+#mainfooter> div >ul{
+  list-style: none;
+}
+#mainfooter> div >ul >li{
+  list-style: none;
+  margin: 15px 0;
+}
 
-  
-  .light>footer>section>div>a>button{
-    background-color:rgba(255, 255, 255, 0.87);
-    color:#242424;
-  }
-  .light>footer>section>div>a>button>img{
-  filter: none;
-  }
-  .light>footer>section>div{
-    color: #242424;
-  }
+#redes >ul>li>img{
+  height: 20px;
+}
 
-  .light>footer>section>div>img{
-    filter: none;
-  }
+#redes >ul>li{
+  display: flex;
+  margin: 8%;
+  align-items: center;
+  gap: 5px;
+}
+
+#pagos{
+  margin-top: 2%;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 120px;
+}
+#pagos > img{
+  height: 45px;
+}

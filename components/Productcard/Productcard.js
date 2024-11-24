@@ -1,13 +1,11 @@
 import "./ProductCard.css";
 export const Productcard = (smartphone) => `
-<img src=${smartphone.image} alt=${smartphone.name}/>
-<div class="header">
-<h2>${smartphone.name}</h2>
-<div>
-<p>${smartphone.price}</p>
-</div>
-</div>
-<div class="detail">
-<p>${smartphone.description}</p>
-</div>
+  <button class="cardBtn" >
+    <img src="${smartphone.image}" alt="${smartphone.name}">
+    <h3>${smartphone.name}</h3>
+    <h4>${smartphone.price}</h4>
+     <h5>${smartphone.rating}⭐<h5>
+     <p>${smartphone.description}</p>
+    </button>
+  
 `;
