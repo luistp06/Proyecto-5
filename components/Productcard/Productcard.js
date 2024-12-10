@@ -3,9 +3,13 @@ export const Productcard = (smartphone) => `
   <button class="cardBtn" >
     <img src="${smartphone.image}" alt="${smartphone.name}">
     <h3>${smartphone.name}</h3>
-    <h4>${smartphone.price}</h4>
-     <h5>${smartphone.rating}⭐<h5>
-     <p>${smartphone.description}</p>
+    <div id ="DivNumbers">
+    <h4 id="precio">${smartphone.price}</h4>
+      <div id ="rating">
+     <h4>${smartphone.rating}<h4>
+     <img src="assets/estrella.png" id="estrella">
+     </div>
+     </div>
     </button>
   
 `;

@@ -1,0 +1,26 @@
+#DivNumbers {
+    
+    padding-bottom: 10%;
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+   text-align: center;
+}
+#precio{
+    color: rgb(212, 61, 6);
+}
+#estrella{
+    height:1em ;
+}
+#rating{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+#rating>h4 {
+    color: #333333c0;
+    font-size: 18px;
+    font-weight: 500;
+}

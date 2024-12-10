@@ -52,8 +52,18 @@ var splide = new Splide( '.splide', {
       Shop(filtrarsmartphones); 
     });
   });
-
-
+  document.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+      const inputValue = document.getElementById("buscar").value.toLowerCase(); 
+     
+      const filtrarsmartphones = smartphones.filter((smartphone) =>
+        smartphone.name.toLowerCase().includes(inputValue)||smartphone.description.toLowerCase().includes(inputValue) 
+      );
+    
+      
+      Shop(filtrarsmartphones); 
+    }
+    });
 
 
 

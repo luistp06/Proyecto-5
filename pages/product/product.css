@@ -2,10 +2,28 @@
 #general{
     display: flex;
     flex-direction: row;
+    margin: 2%;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+   
 }
 #imagen{
     height: 500px;
-    
+    width: auto;
+
+}
+#texto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 650px;
+    width: 40%;
+}
+#finalPrice{
+    color: rgb(176, 0, 0);
+    font-size: 1.4em;
+    margin-top: 2%;
 }
 #comprar{
     background-color:  rgb(162, 0, 255);
@@ -21,8 +39,32 @@
     border-radius: 8px;
     border-style: none;
 }
+#caracteristicas{
+    margin: 2% 0;
+}
 #caracteristicas>div{
 display: flex;
 flex-direction: row;
-gap: 3%;
+
+}
+table {
+  border-spacing: 0 10px;
+  width: 100%;
+  text-align: center;
+  margin: 0% 0% 4% 0;
+}
+
+th, td {
+  padding: 10px 40px;
+  border: 1px solid #ddd;
+}
+
+#buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+#buttons> button{
+    width: 35%;
 }

@@ -13,15 +13,15 @@ const smartphone = smartphones.find((element)=> element.id === id);
   <div id = "general">
     <img src="${smartphone.image}" alt="${smartphone.name}" id="imagen">
     <section id="texto">
-    <h3>${smartphone.name}</h3>
+    <h2>${smartphone.name}</h2>
     <p>${smartphone.description}</p>
-    <h4>${smartphone.price}</h4>
+    <h4 id="finalPrice">${smartphone.price}</h4>
     <section id="caracteristicas">
     <h2>Caracteristicas</h2>
      <table>
        <tr>
         <th>Marca</th>
-        <td>${smartphone.color}</td>
+        <td>${smartphone.brand}</td>
       </tr>
        <tr>
         <th>Color</th>
@@ -39,11 +39,12 @@ const smartphone = smartphones.find((element)=> element.id === id);
         <th>Tamaño de pantalla</th>
         <td>${smartphone.screen}</td>
       </tr>
-
       </table>
-    </section>
+    </section >
+    <div id="buttons">
     <button id = "comprar">Comprar Ya</button>
     <button id = "añadir">Añadir a la cesta</button>
+    </div>
     </section>
     <div/>
 
