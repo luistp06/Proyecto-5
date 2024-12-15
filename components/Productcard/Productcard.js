@@ -1,4 +1,4 @@
-import "./ProductCard.css";
+import "./Productcard.css";
 export const Productcard = (smartphone) => `
   <button class="cardBtn" >
     <img src="${smartphone.image}" alt="${smartphone.name}">
