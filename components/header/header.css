@@ -9,6 +9,9 @@ header{
   #title{
         font-size: 35px;
       }
+  #smartphonelogo{
+      display: none;
+     }
       
  nav {
           height: 10vh;
@@ -67,7 +70,7 @@ header{
   }
    #inputcontainer{
           position: relative;
-          width: 600px; 
+          width: 35%; 
       }
   #inputcontainer>input {
           width: 100%;
@@ -93,7 +96,7 @@ span{
 
 #buscarBtn{
   position: absolute;
-          width: 7%; 
+          width: 40px; 
           height: 100%;
           background: none;
           border-radius: 0 3px 3px 0;
@@ -118,5 +121,115 @@ span{
   #basket {
     margin-right: 0%;
 }
+#user{
+  margin-left: 40px;
+}
+}
+@media (max-width: 1360px){
+  .purplebtn{
+    display: flex;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 14px;
+  
+  }
+  .purplebtn> img{
+    height: 60%;
 }
 
+}
+@media (max-width: 1000px){
+  nav {
+    
+    padding: 0 2rem;
+
+  }
+  #title{
+    font-size: 28px;
+  }
+}
+  @media (max-width: 900px){
+    .purplebtn>p{
+      display: none;
+    }
+    .purplebtn:hover{
+      border:none;
+      transform: scale(1.1); 
+    }
+    .purplebtn{
+    width: auto;
+    border-radius: 50px;
+    
+    }
+    .purplebtn>img{
+   
+    height: 70%;
+  }
+  }
+  @media (max-width: 730px){
+    #title{
+      font-size: 3.5vw;
+    }
+    nav {
+      padding: 0 3%;
+    }
+    #user{
+      margin-left: 40px;
+    }
+  }
+  @media (max-width: 600px){
+    .purplebtn{
+      height: 40%;
+    }
+   
+  #inputcontainer>input {
+    width: 100%;
+    height: 30px;
+    
+    border-radius: 50px 0 0 50px;
+    border-width: 0.5px 0 0.5px 0.5px;
+    background-color: rgb(255, 255, 255);
+}
+  #buscarBtn{
+    position: absolute;
+            width: 30px; 
+            height: 100%;
+            background: none;
+            border-radius: 0 50px 50px 0;
+            border-width: 0.5px 0.5px 0.5px 0;
+              transition: all 0.5s ease;
+  }
+  #buscarBtn >img {
+    position: absolute;
+    right: 10px; 
+    top: 25%;
+    width: 15px;
+    height: 15px; 
+}
+#user{
+  margin-left: 30px;
+}
+#title{
+  font-size: 4vw;
+}
+  }
+  @media (max-width: 500px){
+    #title{
+      display: none;
+    }
+    nav>button{
+      height: 60%;
+      
+    }
+    #smartphonelogo{
+      display: block;
+      width: 60px;
+    }
+  }

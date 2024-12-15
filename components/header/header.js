@@ -7,6 +7,7 @@ export const header= () => `
 <a href="/" id="homelink"><h2 id="title">
     Smartphone <span>Zone</span>
 </h2>
+<img id="smartphonelogo" src="assets/smartphonezone.png">
 </a>
 </button>
 <div id="inputcontainer">

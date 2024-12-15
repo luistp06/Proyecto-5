@@ -1,7 +1,7 @@
 footer{
   display: flex;
   flex-direction: column;
-  width: 100%s;
+  width: 100%;
     margin-top: 4rem;
     align-items: center;
     justify-content: center;
@@ -46,4 +46,55 @@ background-color: rgba(72, 12, 128, 0.76);
 }
 #pagos > img{
   height: 45px;
+}
+
+@media (max-width: 1200px){
+  #mainfooter{
+    flex-wrap: wrap;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    gap: 15%;
+    
+  }
+}
+  @media (max-width: 500px){
+    #mainfooter{
+      flex-wrap: wrap;
+      width: 95%;
+      align-items: center;
+      justify-content: center;
+      gap: 15%;
+      margin-bottom:  2vh;
+  }
+  #pagos{
+    width: 90%;
+  }
+  #redes>ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 20px;
+    
+    align-items: center;
+    justify-content: center;
+  }
+  #redes >ul>li{
+    display: flex;
+    margin: 10px ;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    
+  }
+  #mainfooter> div >ul >li{
+    display: flex;
+    list-style: none;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 370px){
+  #pagos{
+    margin-top: 5%;}
 }

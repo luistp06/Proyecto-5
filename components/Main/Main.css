@@ -21,7 +21,7 @@ main{
 }
 
 .categoria {
-  min-width: 130px;
+  min-width: 28%;
   height: 60px;
   color: #fff;
   padding: 5px 80px;
@@ -82,3 +82,98 @@ main{
 .cardBtn>p{
   margin: 2% 10%;
 }
+
+@media (max-width: 1700px){
+  .categoria {
+    min-width: 130px;
+   
+  }
+}
+
+
+
+@media (max-width: 1300px){
+  #categorias{
+    margin: 80px 0 60px 0;
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+  }
+  .categoria {
+    min-width: 0px;
+    padding: 5px 60px;
+    font-size: 18px;
+  }
+  
+}
+  @media (max-width: 1100px){
+     #categorias{
+    margin: 80px 0 60px 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .categoria {
+    min-width: 0px;
+    padding: 5px 40px;
+    font-size: 18px;
+  }
+  .ofertas-container {
+    width: 80%;
+    height: fit-content;
+    margin: 20px 40px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr));
+    
+  }
+  .oferta{
+    width: 100%;
+  }
+  }
+  @media (max-width: 900px){
+    #categorias{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 60px;
+      width: 90%;
+      justify-content: center;
+    }
+    .categoria {
+      width: 38%;
+      font-size: 18px;
+      margin: 0 2%;
+    }
+    .ofertas-container {
+      width: 80%;
+      height: fit-content;
+      margin: 20px 40px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(180px, 1fr));
+      
+    }
+  
+  }
+  @media (max-width: 550px){
+    .ofertas-container {
+      width: 70%;
+      height: fit-content;
+      margin: 20px 40px;
+      display: grid;
+      grid-template-columns: repeat(1, minmax(180px, 1fr));
+      
+    }
+    #categorias{
+      margin: 60px 0 60px 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 60px;
+      width: 80%;
+      justify-content: center;
+    }
+    .categoria {
+      width: 100%;
+      font-size: 18px;
+      margin: 0;
+    }
+  }

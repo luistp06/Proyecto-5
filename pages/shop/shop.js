@@ -16,10 +16,12 @@ export const Shop = (filtrarsmartphones,filteredsmartphones) => {
   cleanPage(main);
   main.innerHTML = `
   <section class="principal">
+   <button id="toggle-filters" class="toggle-button">Mostrar filtros</button>
     <aside id="filtros">
+     <div id="filtros-container" class="hidden">
     <h2>Filtros</h2>
     <ul>
-    <li id ="precio"><label for="price">Precio Máximo: </label>
+    <li id ="precio_filter"><label for="price">Precio Máximo: </label>
 <input
   type="range"
   name="Precio"
@@ -74,10 +76,25 @@ export const Shop = (filtrarsmartphones,filteredsmartphones) => {
     </ul>
     <button id= "filterbutton">Filtrar
     </button>
+    </div>
     </aside>
     <section class="products-container"></section>
     </section>
     `;
+    const toggleButton = document.getElementById("toggle-filters");
+const filtrosContainer = document.getElementById("filtros-container");
+
+toggleButton.addEventListener("click", () => {
+  filtrosContainer.classList.toggle("hidden");
+
+  // Cambia el texto del botón dependiendo del estado
+  if (filtrosContainer.classList.contains("hidden")) {
+    toggleButton.textContent = "Mostrar filtros";
+  } else {
+    toggleButton.textContent = "Ocultar filtros";
+  }
+});
+ 
     const container = document.querySelector(".products-container");
     const filterButton = document.getElementById("filterbutton");
 
@@ -158,7 +175,6 @@ priceInput.addEventListener("input", () => {
   };
 
 
- 
  
 
 

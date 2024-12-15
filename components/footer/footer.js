@@ -11,7 +11,7 @@ export const footer= () => `
   <li>Cita asistencia técnica</li>
 </ul>
 </div>
-<div id = "Quien somos">
+<div id = "Quiensomos">
 <ul>
   <li>Quiénes somos </li>
   <li>Nuestras tiendas </li>

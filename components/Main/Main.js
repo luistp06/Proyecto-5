@@ -3,6 +3,7 @@ import {Productcard} from "../Productcard/Productcard";
 import { smartphones } from "../../data/data";
 import { linkProduct } from "../../utils/linkProduct.js";
 import { Product} from "../../pages/product/product.js";
+
 export const Main= () => `
  <section class="splide" aria-label="Splide Basic HTML Example">
         <div class="splide__track">
@@ -10,7 +11,9 @@ export const Main= () => `
             <li class="splide__slide">
             <img src="https://st1.techlusive.in/wp-content/uploads/2023/10/samsung-galaxy-s24-series-1.jpg"></img>
             </li>
-            <li class="splide__slide"><img src="https://www.alezay.com/wp-content/uploads/2023/12/XIAOMI-14-PRO-BANNER-ALEZAY-KUWAIT.jpg"></img></li>
+            <li class="splide__slide">
+            <img src="https://www.alezay.com/wp-content/uploads/2023/12/XIAOMI-14-PRO-BANNER-ALEZAY-KUWAIT.jpg">
+            </li>
             <li class="splide__slide"><img src="https://www.apple.com/la/iphone-16/images/overview/welcome/hero_alt__ey5khbzf04eq_xlarge.png"></img></li>
           </ul>
         </div>
@@ -23,6 +26,7 @@ export const Main= () => `
 </section>
 <section class="ofertas-container"></section>
  `
+ 
  
  export const InsertProducts = () => {
   const ofertas = document.querySelector(".ofertas-container");
@@ -42,7 +46,10 @@ cards.forEach(card => {
     const id = card.getAttribute("id");
     linkProduct(Product, id);
   });
+
 });
-}
+
+
+ }
 
 
