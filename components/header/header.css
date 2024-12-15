@@ -186,7 +186,11 @@ span{
   }
   @media (max-width: 600px){
     .purplebtn{
-      height: 40%;
+      height: 30px;
+    }
+    .purplebtn>img{
+   
+      height: 100%;
     }
    
   #inputcontainer>input {
@@ -233,4 +237,13 @@ span{
       width: 60px;
       margin: 2px 0;
     }
+    nav {
+      padding: 0 3% 
+    }
+    #user{
+      margin-left: 30px;
+    }
+    #basket {
+      margin-right: 2%;
+  }
   }
