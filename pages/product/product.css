@@ -19,6 +19,7 @@
     flex-direction: column;
     height: 650px;
     width: 40%;
+    gap: 10px;
 }
 #finalPrice{
     color: rgb(176, 0, 0);
@@ -47,6 +48,7 @@ display: flex;
 flex-direction: row;
 
 }
+
 table {
   border-spacing: 0 10px;
   width: 100%;
@@ -97,6 +99,8 @@ th, td {
             flex-direction: column;
             height: auto;
             width: 70%;
+        
+           
         }
         #buttons{
             display: flex;
@@ -131,6 +135,7 @@ th, td {
     flex-direction: column;
     height: auto;
     width: 80%;
+    gap: 20px;
 }
     }
 
