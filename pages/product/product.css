@@ -113,13 +113,14 @@ th, td {
             #buttons> button{
                 width: 45%;
         }
-    }
-    @media (max-width: 500px){
         #imagen{
             height: auto;
-            width: 99%;
+            width: 90%;
             margin-bottom: 5%;
         }
+    }
+    @media (max-width: 500px){
+        
         #buttons> button{
             width: 40%;
             padding: 2% 10%;

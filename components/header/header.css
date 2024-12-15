@@ -225,11 +225,12 @@ span{
       display: none;
     }
     nav>button{
-      height: 60%;
+      height: 100%;
       
     }
     #smartphonelogo{
       display: block;
       width: 60px;
+      margin: 2px 0;
     }
   }
